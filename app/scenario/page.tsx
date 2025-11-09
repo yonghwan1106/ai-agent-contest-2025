@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import PageHeader from '@/components/PageHeader';
 import ChatSimulator from '@/components/ChatSimulator';
@@ -56,6 +57,10 @@ const keyFeatures = [
 ];
 
 export default function Scenario() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className="min-h-screen">
       <PageHeader

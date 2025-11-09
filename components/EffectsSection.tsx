@@ -138,20 +138,6 @@ export default function EffectsSection() {
   return (
     <section id="effects" className="py-20 px-4 bg-gradient-to-br from-indigo-50 via-white to-pink-50">
       <div className="max-w-6xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            <span className="gradient-text">기대효과</span>
-          </h2>
-          <p className="text-xl text-gray-600">
-            실질적이고 측정 가능한 가치 창출
-          </p>
-        </motion.div>
 
         {/* Key Stats */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">

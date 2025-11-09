@@ -1,11 +1,16 @@
 'use client';
 
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import PageHeader from '@/components/PageHeader';
 import Footer from '@/components/Footer';
 import { FaFileDownload, FaGithub, FaTrophy, FaUser, FaEnvelope, FaPhone, FaCalendar } from 'react-icons/fa';
 
 export default function Proposal() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className="min-h-screen">
       <PageHeader

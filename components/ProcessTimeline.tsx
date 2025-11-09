@@ -66,20 +66,6 @@ export default function ProcessTimeline() {
   return (
     <section className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            <span className="gradient-text">7단계 통합 프로세스</span>
-          </h2>
-          <p className="text-xl text-gray-600">
-            퇴사부터 재취업까지, AI가 자동으로 연결합니다
-          </p>
-        </motion.div>
 
         {/* Desktop Timeline */}
         <div className="hidden lg:block relative">

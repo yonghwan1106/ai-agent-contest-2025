@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import PageHeader from '@/components/PageHeader';
 import ProcessTimeline from '@/components/ProcessTimeline';
@@ -178,6 +179,10 @@ const serviceMapping = [
 ];
 
 export default function Process() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className="min-h-screen">
       <PageHeader
