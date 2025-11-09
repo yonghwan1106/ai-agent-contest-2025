@@ -92,9 +92,12 @@ export default function ChatSimulator() {
   const [isTyping, setIsTyping] = useState(false);
   const [showOptions, setShowOptions] = useState(true);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const chatContainerRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+    }
   };
 
   useEffect(() => {
@@ -169,7 +172,7 @@ export default function ChatSimulator() {
           </div>
 
           {/* Chat Messages */}
-          <div className="h-[500px] overflow-y-auto p-6 bg-gray-50">
+          <div ref={chatContainerRef} className="h-[500px] overflow-y-auto p-6 bg-gray-50">
             <AnimatePresence>
               {messages.map((message, index) => (
                 <motion.div
