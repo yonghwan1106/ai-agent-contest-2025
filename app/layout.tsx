@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
+    <html lang="ko" style={{ scrollBehavior: 'auto' }}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
