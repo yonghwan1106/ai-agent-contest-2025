@@ -35,10 +35,14 @@ export default function Proposal() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-indigo-600 to-pink-600 text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                <a
+                  href="/proposal.pdf"
+                  download="[서식1] 공모신청서_내일(My Job) 찾기 내비게이터.pdf"
+                  className="flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-indigo-600 to-pink-600 text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+                >
                   <FaFileDownload className="text-xl" />
                   <span>PDF 다운로드</span>
-                </button>
+                </a>
 
                 <a
                   href="https://github.com/yonghwan1106/ai-agent-contest-2025"
